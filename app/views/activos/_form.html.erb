@@ -1,0 +1,37 @@
+<%= form_with(model: activo, local: true) do |form| %>
+  <% if activo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(activo.errors.count, "error") %> prohibited this activo from being saved:</h2>
+
+      <ul>
+      <% activo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Descripcion %>
+    <%= form.text_area :Descripcion, id: :activo_Descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monto %>
+    <%= form.text_field :monto, id: :activo_monto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha, id: :activo_fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sector %>
+    <%= form.number_field :sector, id: :activo_sector %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

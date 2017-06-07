@@ -1,0 +1,27 @@
+<%= form_with(model: detalle_sector, local: true) do |form| %>
+  <% if detalle_sector.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(detalle_sector.errors.count, "error") %> prohibited this detalle_sector from being saved:</h2>
+
+      <ul>
+      <% detalle_sector.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sector %>
+    <%= form.number_field :sector, id: :detalle_sector_sector %>
+  </div>
+
+  <div class="field">
+    <%= form.label :empleado %>
+    <%= form.number_field :empleado, id: :detalle_sector_empleado %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

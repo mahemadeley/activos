@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo: 1
+  Activo: MyString
+  integer: MyString
+  descripcion: MyText
+  montoactual: 1.5
+  fecha: 2017-06-06
+
+two:
+  tipo: 1
+  Activo: MyString
+  integer: MyString
+  descripcion: MyText
+  montoactual: 1.5
+  fecha: 2017-06-06

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bienes:</strong>
+  <%= @tipo.bienes %>
+</p>
+
+<p>
+  <strong>Vida util:</strong>
+  <%= @tipo.vida_util %>
+</p>
+
+<p>
+  <strong>Coeficiente:</strong>
+  <%= @tipo.Coeficiente %>
+</p>
+
+<%= link_to 'Edit', edit_tipo_path(@tipo) %> |
+<%= link_to 'Back', tipos_path %>

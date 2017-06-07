@@ -1,0 +1,22 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: postgres
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: ActivosFijos_development
+
+test:
+  <<: *default
+  database: ActivosFijos_test
+
+production:
+  <<: *default
+  database: ActivosFijos_production
+  username: ActivosFijos
+  password: <%= ENV['ACTIVOSFIJOS_DATABASE_PASSWORD'] %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bienes: MyString
+  vida_util: 1
+  Coeficiente: 1.5
+
+two:
+  bienes: MyString
+  vida_util: 1
+  Coeficiente: 1.5

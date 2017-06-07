@@ -1,0 +1,49 @@
+
+
+<%= form_with(model: evaluo, local: true) do |form| %>
+  <% if evaluo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(evaluo.errors.count, "error") %> prohibited this evaluo from being saved:</h2>
+
+      <ul>
+      <% evaluo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.number_field :tipo, id: :evaluo_tipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Activo %>
+    <%= form.text_field :Activo, id: :evaluo_Activo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :integer %>
+    <%= form.text_field :integer, id: :evaluo_integer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion, id: :evaluo_descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :montoactual %>
+    <%= form.text_field :montoactual, id: :evaluo_montoactual %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha, id: :evaluo_fecha %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

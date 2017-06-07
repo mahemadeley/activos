@@ -1,0 +1,2 @@
+class DetalleSector < ApplicationRecord
+end

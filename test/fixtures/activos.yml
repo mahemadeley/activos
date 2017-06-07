@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Descripcion: MyText
+  monto: 1.5
+  fecha: 2017-06-06
+  sector: 1
+
+two:
+  Descripcion: MyText
+  monto: 1.5
+  fecha: 2017-06-06
+  sector: 1

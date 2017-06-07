@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Detalle Sectors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sector</th>
+      <th>Empleado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @detalle_sectors.each do |detalle_sector| %>
+      <tr>
+        <td><%= detalle_sector.sector %></td>
+        <td><%= detalle_sector.empleado %></td>
+        <td><%= link_to 'Show', detalle_sector %></td>
+        <td><%= link_to 'Edit', edit_detalle_sector_path(detalle_sector) %></td>
+        <td><%= link_to 'Destroy', detalle_sector, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Detalle Sector', new_detalle_sector_path %>

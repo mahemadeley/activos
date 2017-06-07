@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @evaluo.tipo %>
+</p>
+
+<p>
+  <strong>Activo:</strong>
+  <%= @evaluo.Activo %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @evaluo.integer %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @evaluo.descripcion %>
+</p>
+
+<p>
+  <strong>Montoactual:</strong>
+  <%= @evaluo.montoactual %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @evaluo.fecha %>
+</p>
+
+<%= link_to 'Edit', edit_evaluo_path(@evaluo) %> |
+<%= link_to 'Back', evaluos_path %>

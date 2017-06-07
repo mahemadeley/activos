@@ -1,0 +1,32 @@
+<%= form_with(model: tipo, local: true) do |form| %>
+  <% if tipo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tipo.errors.count, "error") %> prohibited this tipo from being saved:</h2>
+
+      <ul>
+      <% tipo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :bienes %>
+    <%= form.text_field :bienes, id: :tipo_bienes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vida_util %>
+    <%= form.number_field :vida_util, id: :tipo_vida_util %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Coeficiente %>
+    <%= form.text_field :Coeficiente, id: :tipo_Coeficiente %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
