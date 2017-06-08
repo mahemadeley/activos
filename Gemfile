@@ -56,3 +56,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'autoprefixer-rails'
+
+#Heroku gem
+gem 'nokogiri'
+gem 'rack', '~> 2.0.1'
+gem 'rspec'
+
+group :production do
+#  gem 'pg','0.18'
+  gem 'rails_12factor','0.0.2'
+end

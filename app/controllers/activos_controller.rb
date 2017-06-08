@@ -69,6 +69,6 @@ class ActivosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def activo_params
-      params.require(:activo).permit(:Descripcion, :monto, :fecha, :sector)
+      params.require(:activo).permit(:descripcion, :precio, :fecha, :sector)
     end
 end

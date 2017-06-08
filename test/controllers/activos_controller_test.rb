@@ -17,7 +17,7 @@ class ActivosControllerTest < ActionDispatch::IntegrationTest
 
   test "should create activo" do
     assert_difference('Activo.count') do
-      post activos_url, params: { activo: { Descripcion: @activo.Descripcion, fecha: @activo.fecha, monto: @activo.monto, sector: @activo.sector } }
+      post activos_url, params: { activo: { descripcion: @activo.descripcion, fecha: @activo.fecha, precio: @activo.precio, sector: @activo.sector } }
     end
 
     assert_redirected_to activo_url(Activo.last)
@@ -34,7 +34,7 @@ class ActivosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update activo" do
-    patch activo_url(@activo), params: { activo: { Descripcion: @activo.Descripcion, fecha: @activo.fecha, monto: @activo.monto, sector: @activo.sector } }
+    patch activo_url(@activo), params: { activo: { descripcion: @activo.descripcion, fecha: @activo.fecha, precio: @activo.precio, sector: @activo.sector } }
     assert_redirected_to activo_url(@activo)
   end
 

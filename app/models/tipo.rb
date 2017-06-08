@@ -1,3 +1,3 @@
 class Tipo < ApplicationRecord
-  has_many :evaluos
+  #has_many :evaluos
 end

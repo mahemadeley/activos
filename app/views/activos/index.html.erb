@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Descripcion</th>
-      <th>Monto</th>
+      <th>Precio</th>
       <th>Fecha</th>
       <th>Sector</th>
       <th colspan="3"></th>
@@ -16,8 +16,8 @@
   <tbody>
     <% @activos.each do |activo| %>
       <tr>
-        <td><%= activo.Descripcion %></td>
-        <td><%= activo.monto %></td>
+        <td><%= activo.descripcion %></td>
+        <td><%= activo.precio %></td>
         <td><%= activo.fecha %></td>
         <td><%= activo.sector %></td>
         <td><%= link_to 'Show', activo %></td>

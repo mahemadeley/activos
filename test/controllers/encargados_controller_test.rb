@@ -11,6 +11,7 @@ class EncargadosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
+    #get :new_encargados
     get new_encargado_url
     assert_response :success
   end
